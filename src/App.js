@@ -5,21 +5,16 @@ import Hello from './components/Hello';
 import Greet from './components/Greet';
 
 function App() {
-  const name = "Nirmit";
-  function fullName(user) {
-    return user.firstName + ' ' + user.lastName;
-  }
-  
-  const user = {
-    firstName: 'Nirmit',
-    lastName: 'Thummar'
-  };
-
   return (
     <div className="App">
       <Welcome />
-      <Hello />
       <Greet />
+      <Hello fname="Nirmit" sname="Thummar">
+        <p>This is a children props</p>
+        <p>This is second line</p>
+      </Hello>
+      <Hello fname="Sanket" sname="Thummar" />
+      <Hello fname="Meet" sname="Dabhi" />
     </div>
   );
 }
