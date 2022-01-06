@@ -20,13 +20,22 @@ import react, {Component} from "react";
 //     )
 // }
 
-const Hello = ({fname, sname}) => {
+// const Hello = ({fname, sname}) => {
+//     return(
+//         <div>
+//             <h1>Hello {fname} {sname}...</h1>
+//         </div>
+//     )
+// }
+
+const Hello = props => {
+    const {fname , sname} = props
     return(
         <div>
             <h1>Hello {fname} {sname}...</h1>
         </div>
     )
-}  
+}
     
 
 export default Hello
