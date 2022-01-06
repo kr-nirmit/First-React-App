@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/welcome';
+import Hello from './components/Hello';
 
 function App() {
   const name = "Nirmit";
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <Welcome />
+      <Hello />
     </div>
   );
 }
