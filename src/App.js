@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Welcome from './components/welcome';
 
 function App() {
   const name = "Nirmit";
@@ -14,19 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello World {name}</p>
-        <p>{fullName(user)}</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Welcome />
     </div>
   );
 }
