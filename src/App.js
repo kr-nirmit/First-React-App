@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/welcome';
 import Hello from './components/Hello';
+import Greet from './components/Greet';
 
 function App() {
   const name = "Nirmit";
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <Welcome />
       <Hello />
+      <Greet />
     </div>
   );
 }
