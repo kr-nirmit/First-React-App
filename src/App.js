@@ -9,16 +9,16 @@ import Counter from './components/Counter';
 function App() {
   return (
     <div className="App">
-      {/* <Welcome />
-      <Greet />
+      {/* <Welcome /> */}
+      {/* <Greet /> */}
       <Hello fname="Nirmit" sname="Thummar">
         <p>This is a children props</p>
         <p>This is second line</p>
       </Hello>
-      <Hello fname="Sanket" sname="Thummar" />
-      <Hello fname="Meet" sname="Dabhi" /> */}
+      {/* <Hello fname="Sanket" sname="Thummar" /> */}
+      {/* <Hello fname="Meet" sname="Dabhi" /> */}
       {/* <Message /> */}
-      <Counter />
+      {/* <Counter /> */}
     </div>
   );
 }
