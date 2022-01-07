@@ -14,6 +14,7 @@ import ConditionalRendering from './components/ConditionalRendering';
 import NameList from './components/NameList';
 import Form from './components/Form';
 import FormFunction from './components/FormFunction';
+import ClassLifecycleA from './components/ClassLifecycleA';
 
 function App() {
   return (
@@ -36,7 +37,8 @@ function App() {
       {/* <ConditionalRendering /> */}
       {/* <NameList /> */}
       {/* <Form /> */}
-      <FormFunction />
+      {/* <FormFunction /> */}
+      <ClassLifecycleA />
     </div>
   );
 }
