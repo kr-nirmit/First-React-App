@@ -1,4 +1,5 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
+import './formStyle.css'
 
 function FormFunction() {
 
@@ -22,16 +23,21 @@ function FormFunction() {
 
     return (
         <div>
-            <form>
-                <div>
+            <form className='form'>
+                <div className='container'>
                     <label>First Name : </label>
-                    <input type='text' value={fname} onChange={changeFirstName}>
-                    </input><br />
+                    <input type='text' value={fname} onChange={changeFirstName}></input>
+                </div >
+                <div className='container'>
                     <label>Last Name : </label>
-                    <input type='text' value={lname} onChange={changeLastName}></input><br />
+                    <input type='text' value={lname} onChange={changeLastName}></input>
+                </div>
+                <div className='container'>
                     <label>Address : </label>
                     <textarea type='textarea' value={address} onChange={changeAddress}></textarea>
-                    <br /><button onClick={onSubmit}>Submit</button>
+                </div>
+                <div className='container'>
+                    <button onClick={onSubmit}>Submit</button>
                 </div>
             </form>
         </div>
