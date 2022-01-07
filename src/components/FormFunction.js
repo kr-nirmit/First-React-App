@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import './formStyle.css'
 
+const formcss = {
+    fonSize: '24px',
+    color: 'red'
+}
+
 function FormFunction() {
 
     const [fname, setFname] = useState(' ');
@@ -25,11 +30,11 @@ function FormFunction() {
         <div>
             <form className='form'>
                 <div className='container'>
-                    <label>First Name : </label>
+                    <label style={formcss}>First Name : </label>
                     <input type='text' value={fname} onChange={changeFirstName}></input>
                 </div >
                 <div className='container'>
-                    <label>Last Name : </label>
+                    <label style={formcss}>Last Name : </label>
                     <input type='text' value={lname} onChange={changeLastName}></input>
                 </div>
                 <div className='container'>
