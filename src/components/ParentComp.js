@@ -8,9 +8,12 @@ class ParentComp extends Component {
         this.state = {
              parentName: 'Parent'
         }
-        this.greetParent = this.greetParent.bind(this)
+        // this.greetParent = this.greetParent.bind(this)
     }
-    greetParent(childName){
+    // greetParent(childName){
+    //     alert(`Hello ${this.state.parentName} from ${childName}`)
+    // }
+    greetParent = (childName) => {
         alert(`Hello ${this.state.parentName} from ${childName}`)
     }
     
