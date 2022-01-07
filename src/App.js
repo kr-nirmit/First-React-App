@@ -10,6 +10,7 @@ import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComp from './components/ParentComp';
 import FunctionState from './components/FunctionState';
+import ConditionalRendering from './components/ConditionalRendering';
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
       {/* <ClassClick /> */}
       {/* <EventBind /> */}
       {/* <ParentComp /> */}
-      <FunctionState />
+      {/* <FunctionState /> */}
+      <ConditionalRendering />
     </div>
   );
 }
