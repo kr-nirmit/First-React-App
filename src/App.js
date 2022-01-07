@@ -13,6 +13,7 @@ import FunctionState from './components/FunctionState';
 import ConditionalRendering from './components/ConditionalRendering';
 import NameList from './components/NameList';
 import Form from './components/Form';
+import FormFunction from './components/FormFunction';
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
       {/* <FunctionState /> */}
       {/* <ConditionalRendering /> */}
       {/* <NameList /> */}
-      <Form />
+      {/* <Form /> */}
+      <FormFunction />
     </div>
   );
 }
