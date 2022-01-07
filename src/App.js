@@ -9,6 +9,7 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComp from './components/ParentComp';
+import FunctionState from './components/FunctionState';
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
       {/* <FunctionClick /> */}
       {/* <ClassClick /> */}
       {/* <EventBind /> */}
-      <ParentComp />
+      {/* <ParentComp /> */}
+      <FunctionState />
     </div>
   );
 }
