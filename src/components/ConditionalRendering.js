@@ -24,9 +24,11 @@ class ConditionalRendering extends Component {
 
         //     return <div>{message}</div>
 
-        return(
-            this.state.logging ? <div>Welcome Back...</div> : <div>Please Login...</div>
-        )
+        // return(
+        //     this.state.logging ? <div>Welcome Back...</div> : <div>Please Login...</div>
+        // )
+
+        return this.state.logging && <div>Welcome Back...</div>
     }
 }
 
