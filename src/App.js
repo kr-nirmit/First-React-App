@@ -12,6 +12,7 @@ import ParentComp from './components/ParentComp';
 import FunctionState from './components/FunctionState';
 import ConditionalRendering from './components/ConditionalRendering';
 import NameList from './components/NameList';
+import Form from './components/Form';
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
       {/* <ParentComp /> */}
       {/* <FunctionState /> */}
       {/* <ConditionalRendering /> */}
-      <NameList />
+      {/* <NameList /> */}
+      <Form />
     </div>
   );
 }
