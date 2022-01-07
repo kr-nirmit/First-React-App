@@ -11,10 +11,18 @@ class ConditionalRendering extends Component {
     
     render() {
         
+        // if(this.state.logging)
+        //     return <div>Welcome Back...</div>
+        // else
+        //     return <div>Please Login...</div>
+
+        let message
         if(this.state.logging)
-            return <div>Welcome Back...</div>
+            message = <div>Welcome Back...</div>
         else
-            return <div>Please Login...</div>
+            message = <div>Please Login...</div>
+
+            return <div>{message}</div>
     }
 }
 
