@@ -11,6 +11,7 @@ import EventBind from './components/EventBind';
 import ParentComp from './components/ParentComp';
 import FunctionState from './components/FunctionState';
 import ConditionalRendering from './components/ConditionalRendering';
+import NameList from './components/NameList';
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
       {/* <EventBind /> */}
       {/* <ParentComp /> */}
       {/* <FunctionState /> */}
-      <ConditionalRendering />
+      {/* <ConditionalRendering /> */}
+      <NameList />
     </div>
   );
 }
