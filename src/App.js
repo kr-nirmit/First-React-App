@@ -18,6 +18,7 @@ import ClassLifecycleA from './components/ClassLifecycleA';
 import ParentComp from './components2/ParentComp';
 import RefDemo from './components2/RefDemo';
 import FocusInput from './components2/FocusInput';
+import FRParentInput from './components2/FRParentInput';
 
 function App() {
   return (
@@ -44,7 +45,8 @@ function App() {
       {/* <ClassLifecycleA /> */}
       {/* <ParentComp /> */}
       {/* <RefDemo /> */}
-      <FocusInput />
+      {/* <FocusInput /> */}
+      <FRParentInput />
     </div>
   );
 }
