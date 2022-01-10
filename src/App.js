@@ -16,6 +16,7 @@ import Form from './components/Form';
 import FormFunction from './components/FormFunction';
 import ClassLifecycleA from './components/ClassLifecycleA';
 import ParentComp from './components2/ParentComp';
+import RefDemo from './components2/RefDemo';
 
 function App() {
   return (
@@ -40,7 +41,8 @@ function App() {
       {/* <Form /> */}
       {/* <FormFunction /> */}
       {/* <ClassLifecycleA /> */}
-      <ParentComp />
+      {/* <ParentComp /> */}
+      <RefDemo />
     </div>
   );
 }
