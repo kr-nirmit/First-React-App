@@ -8,13 +8,14 @@ import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
-import ParentComp from './components/ParentComp';
+// import ParentComp from './components/ParentComp';
 import FunctionState from './components/FunctionState';
 import ConditionalRendering from './components/ConditionalRendering';
 import NameList from './components/NameList';
 import Form from './components/Form';
 import FormFunction from './components/FormFunction';
 import ClassLifecycleA from './components/ClassLifecycleA';
+import ParentComp from './components2/ParentComp';
 
 function App() {
   return (
@@ -38,7 +39,8 @@ function App() {
       {/* <NameList /> */}
       {/* <Form /> */}
       {/* <FormFunction /> */}
-      <ClassLifecycleA />
+      {/* <ClassLifecycleA /> */}
+      <ParentComp />
     </div>
   );
 }
