@@ -25,6 +25,8 @@ import ErrorBoundary from './components3/ErrorBoundary';
 import ClickCounter from './components3/ClickCounter';
 import HoverCounter from './components3/HoverCounter';
 import CounterRenderProps from './components3/CounterRenderProps';
+import ComponentA from './components4/ComponentA';
+import { UserProvider } from './components4/Context';
 
 
 function App() {
@@ -72,12 +74,17 @@ function App() {
       {/* <CounterRenderProps render={(count, incrementCount) => <ClickCounter count={count} incrementCount={incrementCount} />} />
       <CounterRenderProps render={(count, incrementCount) => <HoverCounter count={count} incrementCount={incrementCount} />} /> */}
 
-      <CounterRenderProps> 
+      {/* <CounterRenderProps> 
         {(count, incrementCount) => <ClickCounter count={count} incrementCount={incrementCount} />} 
       </CounterRenderProps>
       <CounterRenderProps>
       {(count, incrementCount) => <HoverCounter count={count} incrementCount={incrementCount} />} 
-      </CounterRenderProps>
+      </CounterRenderProps> */}
+
+      <UserProvider value='Nirmit'>
+        <ComponentA />
+      </UserProvider>
+
     </div>
   );
 }
