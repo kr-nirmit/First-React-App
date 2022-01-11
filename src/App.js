@@ -69,8 +69,15 @@ function App() {
       {/* <ClickCounter name='Nirmit' />
       <HoverCounter /> */}
 
-      <CounterRenderProps render={(count, incrementCount) => <ClickCounter count={count} incrementCount={incrementCount} />} />
-      <CounterRenderProps render={(count, incrementCount) => <HoverCounter count={count} incrementCount={incrementCount} />} />
+      {/* <CounterRenderProps render={(count, incrementCount) => <ClickCounter count={count} incrementCount={incrementCount} />} />
+      <CounterRenderProps render={(count, incrementCount) => <HoverCounter count={count} incrementCount={incrementCount} />} /> */}
+
+      <CounterRenderProps> 
+        {(count, incrementCount) => <ClickCounter count={count} incrementCount={incrementCount} />} 
+      </CounterRenderProps>
+      <CounterRenderProps>
+      {(count, incrementCount) => <HoverCounter count={count} incrementCount={incrementCount} />} 
+      </CounterRenderProps>
     </div>
   );
 }
