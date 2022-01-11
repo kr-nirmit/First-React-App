@@ -24,6 +24,7 @@ import Hero from './components3/Hero';
 import ErrorBoundary from './components3/ErrorBoundary';
 import ClickCounter from './components3/ClickCounter';
 import HoverCounter from './components3/HoverCounter';
+import CounterRenderProps from './components3/CounterRenderProps';
 
 
 function App() {
@@ -65,9 +66,11 @@ function App() {
         <Hero heroName='Batman' />
       </ErrorBoundary> */}
 
-      <ClickCounter name='Nirmit' />
-      <HoverCounter />
+      {/* <ClickCounter name='Nirmit' />
+      <HoverCounter /> */}
 
+      <CounterRenderProps render={(count, incrementCount) => <ClickCounter count={count} incrementCount={incrementCount} />} />
+      <CounterRenderProps render={(count, incrementCount) => <HoverCounter count={count} incrementCount={incrementCount} />} />
     </div>
   );
 }
