@@ -1,28 +1,29 @@
 import React, { Component } from 'react'
-import UserContext, { UserConsumer } from './Context'
+import UserContext from './Context'
 
 class ComponentC extends Component {
 
-    static contextType = UserContext
+    // static contextType = UserContext
 
     render() {
+        console.log(this.context);
         return (
-            <>
+            <div>
+                Component C
                 <div>
-                    Component C
+                    <UserContext.Consumer>
+                        {({ fname, setFname }) => (
+                            <button onClick={() => setFname('Kunal')}>Switch Context (Current: {fname})</button>
+                        )}
+                    </UserContext.Consumer>
                 </div>
-                {/* <UserConsumer>
-                    {(username) => {
-                        return <div>Hello {username}</div>
-                    }}
-                </UserConsumer> */}
-                <div>
+                {/* <div>
                     Hello {this.context}
-                </div>
-            </>
+                </div> */}
+            </div>
         )
     }
 }
-// ComponentC.contextType = UserContext
+ComponentC.contextType = UserContext
 
 export default ComponentC

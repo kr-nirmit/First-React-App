@@ -27,9 +27,11 @@ import HoverCounter from './components3/HoverCounter';
 import CounterRenderProps from './components3/CounterRenderProps';
 import ComponentA from './components4/ComponentA';
 import { UserProvider } from './components4/Context';
+import { useState } from 'react';
 
 
 function App() {
+
   return (
     <div className="App">
       {/* <Welcome /> */}
@@ -81,10 +83,7 @@ function App() {
       {(count, incrementCount) => <HoverCounter count={count} incrementCount={incrementCount} />} 
       </CounterRenderProps> */}
 
-      <UserProvider value='Nirmit'>
         <ComponentA />
-      </UserProvider>
-
     </div>
   );
 }

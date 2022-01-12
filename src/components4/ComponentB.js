@@ -5,10 +5,10 @@ class ComponentB extends Component {
     render() {
         return (
             <div>
+                components B
                 <ComponentC />
             </div>
         )
     }
 }
-
 export default ComponentB
